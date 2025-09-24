@@ -95,24 +95,34 @@ url('images/flower17937.png') left 1rem top 1rem / 180px auto no-repeat,
 
 
 	  
-<style>
-  .contact-card h3.mb-4 {
-    font-family: 'Great Vibes', cursive; /* romantiskt script */
-    font-size: clamp(32px, 6vw, 48px);
-    color: var(--accent);
-    text-align: center;
-    margin-bottom: 1rem;
-    position: relative;
+
+style>
+  /* Elegant bröllopsstil för din befintliga h3.mb-4  */
+  /* Vi använder flera selektorer + !important så att den garanterat vinner över Bootstrap */
+  .contact-wrap h3.mb-4,
+  .contact-card h3.mb-4,
+  h3.mb-4 {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: clamp(32px, 6vw, 48px) !important;
+    color: var(--accent) !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    position: relative; /* krävs för pseudo-elementen nedan */
   }
 
-  .contact-card h3.mb-4::after {
-    content: "❦"; /* dekorativ symbol */
+  /* Liten dekor under texten */
+  .contact-wrap h3.mb-4::after,
+  .contact-card h3.mb-4::after,
+  h3.mb-4::after {
+    content: "❦";
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: #9a7b81;
-    margin-top: .5rem;
+    margin-top: .45rem;
+    line-height: 1;
   }
 </style>
+
 
 
 	</head>
