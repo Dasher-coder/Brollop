@@ -20,7 +20,12 @@
 
     /* HERO med Bootstrap-container */
     .wedding-hero {
-	  padding-bottom: 1rem; /* tidigare 2.5rem eller mer */
+	
+	padding-bottom: .5rem !important; /* mindre luft under rubriken */
+    display: flow-root;               /* förhindrar margin-collaps av sista barnets marginal */
+
+
+		
       min-height: 56vh;
       display: grid;
       place-items: center;
