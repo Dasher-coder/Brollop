@@ -5,6 +5,75 @@
 
 
 
+ bootstrap.min.css
+  <link rel="stylesheet" href="-- Valfritt: vackra typsnitt för rubriken -->
+  <link rel="preconnect" href="  https://fonts.gstatic.com
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    reldex.html -->
+  <style>
+    :root {
+      --accent: #7a5c61;  /* dämpad rosé */
+      --text:   #2b2b2b;
+      --bg:     #fffaf8;
+    }
+    body { background: var(--bg); color: var(--text); }
+
+    /* HERO med Bootstrap-container */
+    .wedding-hero {
+      min-height: 56vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 4rem 1.25rem 2.5rem;
+      background:
+        radial-gradient(1200px 600px at 50% -20%, #fff, transparent 70%),
+        linear-gradient(180deg, #fffaf8 0%, #fff 100%);
+    }
+
+    /* Rubrikstil – direkt i index-filen */
+    .wedding-title {
+      font-family: 'Great Vibes', cursive;      /* dekorativ handstil */
+      font-weight: 400;
+      font-size: clamp(48px, 9vw, 100px);
+      line-height: 1.05;
+      margin: 0;
+      color: var(--accent);
+      letter-spacing: .5px;
+    }
+    .wedding-amp {
+      font-family: 'Playfair Display', serif;   /* separat stil för & */
+      font-style: italic;
+      font-size: .85em;
+      color: #9a7b81;
+      padding: 0 .15em;
+    }
+    .wedding-sub {
+      margin: .75rem 0 0;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(14px, 2.7vw, 22px);
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: #6d6d6d;
+    }
+    .divider {
+      width: 120px; height: 1px; margin: 1rem auto 0;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SNYGG RUBRIK (med Animate.css-effekter) -->
+  <header class="wedding-hero">
+    <div class="container">
+      <h1 class="wedding-title animated fadeInDown">
+        Darko <span class="wedding-amp">&amp;</span> Tove
+      </h1>
+      <h2 class="wedding-sub animated fadeInUp">Bröllop</h2>
+      <div class="divider" aria-hidden="true"></div>
+    </div>
+
 
 	  
 	  
