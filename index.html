@@ -96,32 +96,29 @@ url('images/flower17937.png') left 1rem top 1rem / 180px auto no-repeat,
 
 	  
 
-style>
-  /* Elegant bröllopsstil för din befintliga h3.mb-4  */
-  /* Vi använder flera selektorer + !important så att den garanterat vinner över Bootstrap */
-  .contact-wrap h3.mb-4,
-  .contact-card h3.mb-4,
-  h3.mb-4 {
+
+<style>
+  /* Bröllopsstil för din befintliga <h3 class="mb-4"> i kontaktsektionen */
+  .contact-wrap h3.mb-4 {
     font-family: 'Great Vibes', cursive !important;
     font-size: clamp(32px, 6vw, 48px) !important;
     color: var(--accent) !important;
     text-align: center !important;
     margin-bottom: 1rem !important;
-    position: relative; /* krävs för pseudo-elementen nedan */
+    position: relative;
   }
 
-  /* Liten dekor under texten */
-  .contact-wrap h3.mb-4::after,
-  .contact-card h3.mb-4::after,
-  h3.mb-4::after {
-    content: "❦";
+  /* Dekor under rubriken (fin linje med gradient) */
+  .contact-wrap h3.mb-4::after {
+    content: "";
     display: block;
-    font-size: 22px;
-    color: #9a7b81;
-    margin-top: .45rem;
-    line-height: 1;
+    width: 140px;
+    height: 1px;
+    margin: .6rem auto 0;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
   }
 </style>
+
 
 
 
@@ -139,7 +136,12 @@ style>
 								<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
 								<div class="contact-wrap w-100 p-md-5 p-4">
 									
-									<h3 class="mb-4">Hör av er senast xXxXx</h3>
+									
+<h3 class="mb-4"
+    style="font-family:'Great Vibes', cursive; font-size:clamp(32px,6vw,48px); color:var(--accent); text-align:center; margin-bottom:1rem;">
+  Hör av er senast xXxXx
+</h3>
+
 									<div id="form-message-warning" class="mb-4"> </div> 
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
