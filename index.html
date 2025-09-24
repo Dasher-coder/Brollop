@@ -98,25 +98,28 @@ url('images/flower17937.png') left 1rem top 1rem / 180px auto no-repeat,
 
 
 <style>
-  /* Bröllopsstil för din befintliga <h3 class="mb-4"> i kontaktsektionen */
-  .contact-wrap h3.mb-4 {
-    font-family: 'Great Vibes', cursive !important;
-    font-size: clamp(32px, 6vw, 48px) !important;
-    color: var(--accent) !important;
-    text-align: center !important;
-    margin-bottom: 1rem !important;
-    position: relative;
-  }
+  
+.contact-wrap h3.mb-4 {
+  font-family: 'Playfair Display', serif; /* annan font än huvudrubriken */
+  font-size: clamp(18px, 3.5vw, 26px); /* mindre än Darko & Tove */
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+}
 
-  /* Dekor under rubriken (fin linje med gradient) */
-  .contact-wrap h3.mb-4::after {
-    content: "";
-    display: block;
-    width: 140px;
-    height: 1px;
-    margin: .6rem auto 0;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  }
+.contact-wrap h3.mb-4::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  margin: 0.6rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
 </style>
 
 
