@@ -97,30 +97,29 @@ url('images/flower17937.png') left 1rem top 1rem / 180px auto no-repeat,
 	  
 
 
+
 <style>
-  
-.contact-wrap h3.mb-4 {
-  font-family: 'Playfair Display', serif; /* annan font än huvudrubriken */
-  font-size: clamp(18px, 3.5vw, 26px); /* mindre än Darko & Tove */
-  font-weight: 600;
-  color: var(--accent);
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  position: relative;
-}
+  .contact-wrap h3.mb-4 {
+    font-family: 'Playfair Display', serif; /* mer klassisk stil */
+    font-style: italic; /* kursiv */
+    font-size: clamp(20px, 3vw, 28px) !important; /* mindre storlek */
+    color: #9a7b81 !important; /* mjuk roséton, byt om du vill */
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    position: relative;
+  }
 
-.contact-wrap h3.mb-4::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 1px;
-  margin: 0.6rem auto 0;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-}
-
+  /* Dekor under texten */
+  .contact-wrap h3.mb-4::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: .5rem auto 0;
+    background: linear-gradient(90deg, transparent, #9a7b81, transparent);
+  }
 </style>
+
 
 
 
